@@ -1,0 +1,47 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[english]{babel}
+\usepackage{graphics}
+\input{chapters/preamble}
+\title{ASSIGNMENT 11} %->->->->-> Check hyperref title <-<-<-<-<-
+
+\authoR{LAHARI} %You can change the Institution if you are from somewhere else
+\date{JAN 5,2021}
+%\logo{\includegraphics[width= 0.2\textwidth]{images/a-logo.png}}
+
+\begin{document}
+    
+    \frame{\titlepage}
+    
+    \begin{frame}{QUESTION}
+        In the circuit shown below, a positive edge-triggered D Flip-Flop is used for sampling input
+data Din using clock CK. The XOR gate outputs 3.3 volts for logic HIGH and 0 volts for
+logic LOW levels. The data bit and clock periods are equal and the value of ΔT/TCK = 0.15,
+where the parameters ΔT and TCK are shown in the figure. Assume that the Flip-Flop and the
+XOR gate are ideal.
+
+
+    \end{frame}
+\begin{frame}{diagram}
+\includegraphics[width=1\textwidth]{20210105_184901.jpg}
+If probability of input data bit(D input) transition in each clock period is 0.3, the average value ( in volts,accurate to two decimal places)
+of voltage at node X,is o.8145V.
+
+    
+\end{frame}
+    
+\begin{frame}{diagram}
+\begin{center}
+\includegraphics[width=10cm,height=7cm,keepaspectratio]{td3.png}
+\end{center}
+    
+\end{frame}
+\begin{frame}{Explanation}
+    volatage at X=$\frac{T-\Delta T}{T}.(probability).(voltage value)$\\\\\\
+    X=1-$\frac{\Delta T}{T}$.(0.3).(3.3)\\\\
+    X=(1-0.15).(0.3).(3.3)=0.8415V
+\end{frame}
+    
+    
+    
+    
+\end{document}
